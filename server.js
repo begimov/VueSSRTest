@@ -12,6 +12,8 @@ const renderer = createBundleRenderer(bundle, {
     clientManifest: require('./dist/vue-ssr-client-manifest.json')
 })
 
+app.use('/dist', express.static('./dist'))
+
 app.get('*', (req, res) => {
     renderer.renderToString({
         url: req.url
