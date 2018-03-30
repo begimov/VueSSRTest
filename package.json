@@ -12,7 +12,7 @@
     "build:server": "cross-env NODE_ENV=production webpack --config build/webpack.server.config.js --progress --hide-modules"
   },
   "dependencies": {
-    "express": "^4.16.2",
+    "express": "^4.16.3",
     "vue": "^2.4.4",
     "vue-server-renderer": "^2.5.16"
   },
